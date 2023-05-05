@@ -1,5 +1,11 @@
 #container {
-    margin: 2em 5em;
+    margin: 2em 10em;
     height: 100vh;
     background-color: azure;
+}
+
+@media (max-width: 480px) {
+    #container {
+        margin: 2em 2.5em;
+    }
 }
