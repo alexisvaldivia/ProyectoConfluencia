@@ -9,3 +9,8 @@
         margin: 2em 2.5em;
     }
 }
+
+mat-card-content {
+    font-size: 10rem;
+    text-align: center;
+}

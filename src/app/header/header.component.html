@@ -6,9 +6,9 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item routerLink="partidos">Partidos</a>
+      <a mat-list-item routerLink="equipos">Equipos</a>
+      <a mat-list-item routerLink="apuestas">Apuestas (Proximamente..)</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -21,7 +21,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>ProyectoConfluencia</span>
+      <img src="/assets/liga-deportiva-confluencia.png" width="50em"><span>Liga Deportiva Confluencia</span>
     </mat-toolbar>
     <!-- Add Content Here -->
   </mat-sidenav-content>

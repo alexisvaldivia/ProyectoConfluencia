@@ -13,17 +13,23 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { EquiposComponent } from './equipos/equipos.component';
+import { AuthModule } from './modules/auth/auth.module';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentComponent,
-    HeaderComponent
+    HeaderComponent,
+    EquiposComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    AuthModule,
+    HomeModule,
     MatToolbarModule,
     MatCardModule,
     LayoutModule,
